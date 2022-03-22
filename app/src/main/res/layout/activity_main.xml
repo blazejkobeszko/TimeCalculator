@@ -1,18 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithclock"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="16dp"
+        android:text="CALCULATE YOUR AGE"
+        android:textColor="@color/nyanza"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1/1/2023"
+        android:textColor="@color/nyanza"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="YOUR SELECTED DATE OF BIRTH"
+        android:textColor="@color/ecru"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="You live:"
+        android:textColor="@color/nyanza"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationX="-50dp" />
+
+    <TextView
+        android:id="@+id/tvDateInMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textColor="@color/nyanza"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:translationX="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="minutes"
+        android:textColor="@color/nyanza"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationX="80dp" />
+
+    <TextView
+        android:id="@+id/tvDateInHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textColor="@color/nyanza"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:translationX="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hours"
+        android:textColor="@color/nyanza"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationX="80dp" />
+
+    <TextView
+        android:id="@+id/tvDateInDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textColor="@color/nyanza"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:translationX="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="days"
+        android:textColor="@color/nyanza"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationX="80dp" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/ecru"
+        android:text="Select new date"
+        android:textColor="@color/nyanza"
+        android:textSize="18sp" />
+</LinearLayout>
